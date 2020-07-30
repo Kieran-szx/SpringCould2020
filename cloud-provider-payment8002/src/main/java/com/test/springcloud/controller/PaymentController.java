@@ -28,24 +28,22 @@ public class PaymentController {
         int result = paymentService.creat(payment);
         log.info("********插入结果" + result);
         if (0 < result) {
-            return new CommonResult(200,"插入数据成功,serverPort：" + serverPort,result);
+            return new CommonResult(200, "插入数据成功,serverPort：" + serverPort, result);
         } else {
-            return new CommonResult(444,"插入数据失败",null);
+            return new CommonResult(444, "插入数据失败", null);
         }
     }
 
     @GetMapping(value = "/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
-        log.info("*****查询结果d12："+payment);
+        log.info("*****查询结果d12：" + payment);
 
         if (null != payment) {
-            return new CommonResult(200,"查询成功,serverPort：" + serverPort,payment);
+            return new CommonResult(200, "查询成功,serverPort：" + serverPort, payment);
         } else {
-            return new CommonResult(444,"没有对应记录，查询ID：" + id,null);
+            return new CommonResult(444, "没有对应记录，查询ID：" + id, null);
         }
     }
-
-
 
 }

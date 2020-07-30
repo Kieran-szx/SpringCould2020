@@ -20,8 +20,8 @@ eureka:
     fetch-registry: true
     service-url:
       #单机
-      #defaultZone: http://localhost:7001/eureka
-      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
+      defaultZone: http://localhost:7001/eureka
+      #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
   #服务注册含有主机名称，要想按照规范的要求，只暴露服务名，不要出现主机名
   instance:
     #设置服务名称

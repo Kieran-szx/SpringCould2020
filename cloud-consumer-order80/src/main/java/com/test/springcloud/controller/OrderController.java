@@ -41,11 +41,11 @@ public class OrderController {
      * 返回对象响应体中数据转化成的对象，基本上可以理解为json
      *
      * @param id
-     * @return
+     * @returnhttps://blog.csdn.net/qq_41211642/article/details/104772140
      */
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Long id) {
-        return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
+        return restTemplate.getForObject(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
     }
 
     /**
@@ -56,8 +56,9 @@ public class OrderController {
      */
     @GetMapping("/consumer/payment/getForEntity/{id}")
     public CommonResult<Payment> getPayment2(@PathVariable("id") Long id) {
-        ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL+"/payment/get/"+id, CommonResult.class);
-        if(entity.getStatusCode().is2xxSuccessful()) {
+        ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL + "/payment/get/" + id,
+                                                                        CommonResult.class);
+        if (entity.getStatusCode().is2xxSuccessful()) {
             return entity.getBody();
         } else {
             return new CommonResult(444, "操作失败");
