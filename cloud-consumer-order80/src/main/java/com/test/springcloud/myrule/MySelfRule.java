@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * 这个自定义配置类不能放在@ComponentScan 所扫描的当前包下以及子包下，否则自定义的配置类就会被所有的Ribbon客户端所共享，
  * 达不到特殊化定制的目的
  *
- * @auther Shizx
+ * @author Shizx
  * @date 2020/7/27 14:50
  */
 @Configuration

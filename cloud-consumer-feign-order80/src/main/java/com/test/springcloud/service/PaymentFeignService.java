@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * @FeignClient：指定调用哪个微服务
- * @auther Shizx
+ * @author Shizx
  * @date 2020/7/27 16:51
  */
 @Component

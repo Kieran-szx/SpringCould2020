@@ -9,7 +9,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 /**
  * 配置OpenFeign日志打印功能
  *
- * @auther Shizx
+ * @author Shizx
  * @date 2020/7/30 15:41
  */
 @Configuration
