@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-providerconsul-payment8006</artifactId>
+    <name>服务_consul</name>
 
     <dependencies>
         <!--springcloud consul-server-->

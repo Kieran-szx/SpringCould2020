@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-consumer-feign-order80</artifactId>
+    <name>消费者_feign</name>
 
     <dependencies>
         <!--openfeign-->

@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-consumer-order80</artifactId>
+    <name>消费者_ribbon</name>
 
     <dependencies>
         <!-- devtools 实现热部署 -->

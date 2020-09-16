@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>cloud-provider-hystrix-payment8001</artifactId>
+    <name>提供者_hystrix</name>
 
     <dependencies>
         <!--hystrix-->
