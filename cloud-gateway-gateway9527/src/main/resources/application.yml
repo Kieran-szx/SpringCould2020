@@ -32,7 +32,7 @@ spring:
             #路径相匹配的进行路由
             - Path=/payment/lb/**
             #此时间点后才能访问
-            - After=2020-09-24T11:46:04.705+08:00[Asia/Shanghai]
+            #- After=2020-09-24T11:46:04.705+08:00[Asia/Shanghai]
             #cookie
             #- Cookie=username,zzyy
             #- Header=X-Request-Id, \d+ #请求头要有X-Request-Id属性并且值为整数的正则表达式

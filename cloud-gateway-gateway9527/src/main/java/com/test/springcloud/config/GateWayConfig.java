@@ -22,7 +22,7 @@ public class GateWayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder routeLocatorBuilder) {
         RouteLocatorBuilder.Builder routes = routeLocatorBuilder.routes();
-        routes.route("path_route_atguigu",
+        routes.route("payment_routh2",
                      r -> r.path("/guonei").uri("http://news.baidu.com")).build();
         return routes.build();
     }
